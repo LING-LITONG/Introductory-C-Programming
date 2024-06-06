@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int max(int a, int b) {
+    return (a > b) ? a : b;
+}
 
 /* 
  * Determines if coord is in range between
@@ -25,7 +28,7 @@ int isAtBorder(int coord, int offset, int size) {
   if (coord == offset || coord == offset + size) {
     return 1;
   }
-  
+
   return 0;
 }
 
